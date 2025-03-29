@@ -1,12 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
-
-  <ItemGroup><Compile Include="Helpers.fs" /><Compile Include="CharRange.fs" /><Compile Include="WhiteSpace.fs" /><Compile Include="RestrictedChar.fs" /><Compile Include="Char.fs" /><Compile Include="Misc.fs" /><Compile Include="Prolog.fs" /><Compile Include="Element.fs" /><Compile Include="Document.fs" />
-    
+  <ItemGroup>
+    <Compile Include="Separated.fs" />
+    <Compile Include="Helpers.fs" />
+    <Compile Include="CharRange.fs" />
+    <Compile Include="WhiteSpace.fs" />
+    <Compile Include="RestrictedChar.fs" />
+    <Compile Include="Char.fs" />
+    <Compile Include="Name.fs" />
+    <Compile Include="Comment.fs" />
+    <Compile Include="Misc.fs" />
+    <Compile Include="DocTypeDecl.fs" />
+    <Compile Include="Prolog.fs" />
+    <Compile Include="Element.fs" />
+    <Compile Include="Document.fs" />
   </ItemGroup>
-
 </Project>

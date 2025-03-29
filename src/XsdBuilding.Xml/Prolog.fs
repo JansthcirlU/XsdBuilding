@@ -1,10 +1,10 @@
 namespace XsdBuilding.Xml
 
 module Prolog =
-    type VersionInfo = private {
-        //
+    type VersionInfo = string
+    type XMLDecl = string
+    type MiscList = Misc.Misc list
+    type Prolog = {
+        XMLDecl: XMLDecl option
+        Misc: MiscList option
     }
-    type XMLDecl = private {
-        //
-    }
-    type Prolog = string
