@@ -1,4 +1,9 @@
 [<RequireQualifiedAccess>]
 module Element
 
-type Element = Element
+type Element = {
+    ElementAttributes: ElementAttributes;
+    ElementContent: ElementContent;
+}
+and ElementAttributes = ElementAttributes
+and ElementContent = ElementContent

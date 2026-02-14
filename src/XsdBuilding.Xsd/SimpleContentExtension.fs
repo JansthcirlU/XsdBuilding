@@ -1,4 +1,9 @@
 [<RequireQualifiedAccess>]
 module SimpleContentExtension
 
-type SimpleContentExtension = SimpleContentExtension
+type SimpleContentExtension = {
+    SimpleContentExtensionAttributes: SimpleContentExtensionAttributes;
+    SimpleContentExtensionContent: SimpleContentExtensionContent;
+}
+and SimpleContentExtensionAttributes = SimpleContentExtensionAttributes
+and SimpleContentExtensionContent = SimpleContentExtensionContent

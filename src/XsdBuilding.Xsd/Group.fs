@@ -1,4 +1,9 @@
 [<RequireQualifiedAccess>]
 module Group
 
-type Group = Group
+type Group = {
+    GroupAttributes: GroupAttributes;
+    GroupContent: GroupContent;
+}
+and GroupAttributes = GroupAttributes
+and GroupContent = GroupContent

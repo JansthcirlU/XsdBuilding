@@ -1,4 +1,9 @@
 [<RequireQualifiedAccess>]
 module Sequence
 
-type Sequence = Sequence
+type Sequence = {
+    SequenceAttributes: SequenceAttributes;
+    SequenceContent: SequenceContent;
+}
+and SequenceAttributes = SequenceAttributes
+and SequenceContent = SequenceContent

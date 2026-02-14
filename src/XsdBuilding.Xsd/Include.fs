@@ -1,4 +1,9 @@
 [<RequireQualifiedAccess>]
 module Include
 
-type Include = Include
+type Include = {
+    IncludeAttributes: IncludeAttributes;
+    IncludeContent: IncludeContent;
+}
+and IncludeAttributes = IncludeAttributes
+and IncludeContent = IncludeContent

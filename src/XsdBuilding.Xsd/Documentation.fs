@@ -1,4 +1,9 @@
 [<RequireQualifiedAccess>]
 module Documentation
 
-type Documentation = Documentation
+type Documentation = {
+    DocumentationAttributes: DocumentationAttributes;
+    DocumentationContent: DocumentationContent;
+}
+and DocumentationAttributes = DocumentationAttributes
+and DocumentationContent = DocumentationContent

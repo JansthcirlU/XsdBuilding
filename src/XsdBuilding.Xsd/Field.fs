@@ -1,4 +1,9 @@
 [<RequireQualifiedAccess>]
 module Field
 
-type Field = Field
+type Field = {
+    FieldAttributes: FieldAttributes;
+    FieldContent: FieldContent;
+}
+and FieldAttributes = FieldAttributes
+and FieldContent = FieldContent

@@ -1,4 +1,9 @@
 [<RequireQualifiedAccess>]
 module All
 
-type All = All
+type All = {
+    AllAttributes: AllAttributes;
+    AllContent: AllContent;
+}
+and AllAttributes = AllAttributes
+and AllContent = AllContent

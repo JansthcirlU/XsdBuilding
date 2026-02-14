@@ -1,4 +1,9 @@
 [<RequireQualifiedAccess>]
 module Appinfo
 
-type Appinfo = Appinfo
+type Appinfo = {
+    AppinfoAttributes: AppinfoAttributes;
+    AppinfoContent: AppinfoContent;
+}
+and AppinfoAttributes = AppinfoAttributes
+and AppinfoContent = AppinfoContent
