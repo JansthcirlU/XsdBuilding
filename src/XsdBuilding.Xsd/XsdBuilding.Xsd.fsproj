@@ -8,10 +8,10 @@
     <Compile Include="Appinfo.fs" />
     <Compile Include="Documentation.fs" />
     <Compile Include="Annotation.fs" />
-    <Compile Include="All.fs" />
+    <Compile Include="Attribute.fs" /><Compile Include="All.fs" />
     <Compile Include="Any.fs" />
     <Compile Include="AnyAttribute.fs" />
-    <Compile Include="Attribute.fs" />
+    
     <Compile Include="AttributeGroup.fs" />
     <Compile Include="Choice.fs" />
     <Compile Include="ComplexContent.fs" />
@@ -20,7 +20,7 @@
     <Compile Include="ComplexContentExtension.fs" />
     <Compile Include="SimpleContentExtension.fs" />
     <Compile Include="Field.fs" />
-    <Compile Include="Group.fs" />
+    <Compile Include="Group.fs" /><Compile Include="GroupAll.fs" />
     <Compile Include="Import.fs" />
     <Compile Include="Include.fs" />
     <Compile Include="Key.fs" />
