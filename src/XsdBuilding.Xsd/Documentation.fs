@@ -1,9 +1,12 @@
 [<RequireQualifiedAccess>]
 module Documentation
 
-type Documentation = {
+type Documentation<'TContent> = {
     DocumentationAttributes: DocumentationAttributes;
-    DocumentationContent: DocumentationContent;
+    DocumentationContent: DocumentationContent<'TContent>;
 }
-and DocumentationAttributes = DocumentationAttributes
-and DocumentationContent = DocumentationContent
+and DocumentationAttributes = {
+    Source: Xml.AnyURI option;
+    Language: Xml.Lang option
+}
+and DocumentationContent<'TContent> = DocumentationContent of 'TContent

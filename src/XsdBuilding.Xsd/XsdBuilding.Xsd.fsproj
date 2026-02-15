@@ -4,17 +4,18 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="All.fs" />
+    <Compile Include="Xml.fs" />
+    <Compile Include="Appinfo.fs" />
+    <Compile Include="Documentation.fs" />
     <Compile Include="Annotation.fs" />
+    <Compile Include="All.fs" />
     <Compile Include="Any.fs" />
     <Compile Include="AnyAttribute.fs" />
-    <Compile Include="Appinfo.fs" />
     <Compile Include="Attribute.fs" />
     <Compile Include="AttributeGroup.fs" />
     <Compile Include="Choice.fs" />
     <Compile Include="ComplexContent.fs" />
     <Compile Include="ComplexType.fs" />
-    <Compile Include="Documentation.fs" />
     <Compile Include="Element.fs" />
     <Compile Include="ComplexContentExtension.fs" />
     <Compile Include="SimpleContentExtension.fs" />

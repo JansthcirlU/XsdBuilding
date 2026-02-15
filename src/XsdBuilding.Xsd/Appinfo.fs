@@ -1,9 +1,11 @@
 [<RequireQualifiedAccess>]
 module Appinfo
 
-type Appinfo = {
+type Appinfo<'TContent> = {
     AppinfoAttributes: AppinfoAttributes;
-    AppinfoContent: AppinfoContent;
+    AppinfoContent: AppinfoContent<'TContent>;
 }
-and AppinfoAttributes = AppinfoAttributes
-and AppinfoContent = AppinfoContent
+and AppinfoAttributes = {
+    Source: Xml.AnyURI option
+}
+and AppinfoContent<'TContent> = AppinfoContent of 'TContent
