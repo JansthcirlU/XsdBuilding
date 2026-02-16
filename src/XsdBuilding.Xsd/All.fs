@@ -7,10 +7,15 @@ type All<'TContentElements, 'TAnnotationAppinfoContent, 'TAnnotationDocumentatio
 }
 and AllAttributes = {
     Id: Xml.Id option;
-    MaxOccurs: Attribute.Attributes.MaxOccurs;
-    MinOccurs: Attribute.Attributes.MinOccurs
+    MaxOccurs: MaxOccurs;
+    MinOccurs: MinOccurs
 }
 and AllContent<'TContentElements, 'TAnnotationAppinfoContent, 'TAnnotationDocumentationContent, 'TAnnotationAttributes> = {
     Annotation: Annotation.Annotation<'TAnnotationAppinfoContent, 'TAnnotationDocumentationContent, 'TAnnotationAttributes> option;
     Elements: 'TContentElements
 }
+and MaxOccurs =
+    | One
+and MinOccurs =
+    | Zero
+    | One

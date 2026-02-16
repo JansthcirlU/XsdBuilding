@@ -7,13 +7,13 @@ type Element<'TAnnotationAppinfoContent, 'TAnnotationDocumentationContent, 'TAnn
 }
 and ElementAttributes<'TAttributes> = {
     Abstract: Xml.Bool;
-    Block: Attribute.Attributes.Block;
+    Block: Block;
     Default: Xml.String;
-    Final: Attribute.Attributes.Final;
+    Final: Final;
     Fixed: Xml.String;
-    Form: Attribute.Attributes.Form;
-    MaxOccurs: Attribute.Attributes.MaxOccurs;
-    MinOccurs: Attribute.Attributes.MinOccurs;
+    Form: Form;
+    MaxOccurs: MaxOccurs;
+    MinOccurs: MinOccurs;
     Name: Xml.NCName;
     Nillable: Xml.Bool;
     Ref: Xml.QName;
@@ -33,3 +33,24 @@ and ReferenceCategory =
     | Key of Key.Key
     | Keyref of Keyref.Keyref
     | Unique of Unique.Unique
+and Block =
+    | All
+    | Derivations of BlockDerivation list
+and BlockDerivation =
+    | Extension
+    | Restriction
+    | Substitution
+and Final =
+    | All
+    | Derivations of FinalDerivation list
+and FinalDerivation =
+    | Extension
+    | Restriction
+and Form =
+    | Qualified
+    | Unqualified
+and MaxOccurs =
+    | NonNegative of Xml.NonNegativeInteger
+    | Unbounded
+and MinOccurs =
+    | NonNegative of Xml.NonNegativeInteger
