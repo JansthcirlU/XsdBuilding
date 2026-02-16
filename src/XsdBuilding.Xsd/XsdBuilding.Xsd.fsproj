@@ -11,20 +11,21 @@
     <Compile Include="Attribute.fs" /><Compile Include="All.fs" />
     <Compile Include="Any.fs" />
     <Compile Include="AnyAttribute.fs" />
-    
+    <Compile Include="ComplexType.fs" />
+    <Compile Include="SimpleType.fs" />
+    <Compile Include="Key.fs" />
+    <Compile Include="Keyref.fs" />
+    <Compile Include="Unique.fs" />
+    <Compile Include="Element.fs" />
     <Compile Include="AttributeGroup.fs" />
     <Compile Include="Choice.fs" />
     <Compile Include="ComplexContent.fs" />
-    <Compile Include="ComplexType.fs" />
-    <Compile Include="Element.fs" />
     <Compile Include="ComplexContentExtension.fs" />
     <Compile Include="SimpleContentExtension.fs" />
     <Compile Include="Field.fs" />
     <Compile Include="Group.fs" /><Compile Include="GroupAll.fs" />
     <Compile Include="Import.fs" />
     <Compile Include="Include.fs" />
-    <Compile Include="Key.fs" />
-    <Compile Include="Keyref.fs" />
     <Compile Include="List.fs" />
     <Compile Include="Notation.fs" />
     <Compile Include="Redefine.fs" />
@@ -35,8 +36,6 @@
     <Compile Include="Selector.fs" />
     <Compile Include="Sequence.fs" />
     <Compile Include="SimpleContent.fs" />
-    <Compile Include="SimpleType.fs" />
     <Compile Include="Union.fs" />
-    <Compile Include="Unique.fs" />
   </ItemGroup>
 </Project>
