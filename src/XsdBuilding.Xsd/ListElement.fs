@@ -1,5 +1,5 @@
 [<RequireQualifiedAccess>]
-module List
+module ListElement
 
 type List = {
     ListAttributes: ListAttributes;
