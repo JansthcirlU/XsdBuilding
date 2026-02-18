@@ -37,7 +37,7 @@ and ComplexTypeAttributes<'TAttributes> = {
 //      )
 //  )
 and ComplexTypeContent = {
-    Annotation: Annotation.Annotation option;
+    // Annotation: Annotation.Annotation option;
     ContentCategory: ComplexTypeContentCategory;
 }
 and ComplexTypeContentCategory =

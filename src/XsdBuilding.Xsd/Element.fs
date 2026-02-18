@@ -46,7 +46,7 @@ and ElementContent<'TAnnotationAppinfoContent, 'TAnnotationDocumentationContent,
 
 and TypeCategory<'TSimpleTypeAnnotationAppinfoContent, 'TSimpleTypeAnnotationDocumentationContent, 'TSimpleTypeAnnotationAttributes, 'TSimpleTypeAttributes>
     =
-    | ComplexType of ComplexType.ComplexType
+    // | ComplexType of ComplexType.ComplexType
     | SimpleType of
         SimpleType.SimpleType<
             'TSimpleTypeAnnotationAppinfoContent,
