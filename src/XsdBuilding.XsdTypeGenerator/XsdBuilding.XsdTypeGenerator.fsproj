@@ -4,7 +4,7 @@
     <TargetFramework>net10.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="XsdValidator.fs" /><Compile Include="XsdType.fs" />
+    <Compile Include="XsdValidator.fs" /><Compile Include="XsdType.fs" /><Compile Include="TypeGenerator.fs" />
     
     <Compile Include="Program.fs" />
   </ItemGroup>

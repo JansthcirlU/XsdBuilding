@@ -1,0 +1,4 @@
+module TypeGenerator
+
+open XsdType
+
