@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/XsdBuilding.Xsd/XsdBuilding.Xsd.fsproj" />
+    <Project Path="src/XsdBuilding.XsdTypeGenerator/XsdBuilding.XsdTypeGenerator.fsproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/XsdBuilding.Xsd.Tests/XsdBuilding.Xsd.Tests.fsproj" />
+  </Folder>
+</Solution>
